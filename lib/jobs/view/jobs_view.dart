@@ -18,7 +18,7 @@ class JobView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    context.read<JobViewProvider>().laodUsers(context);
+    context.read<JobViewProvider>().jobFeched(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -71,7 +71,6 @@ class JobView extends StatelessWidget {
             child: SizedBox(
               height: 450.h,
               child: Consumer<JobViewProvider>(
-
                 builder: (context, provider, _) {
                   final users = provider.users;
                   log('list in ${users.length}');

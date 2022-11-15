@@ -8,8 +8,9 @@ import '../../services/api_services.dart';
 
 class JobViewProvider with ChangeNotifier{
    List<AddJobModel> users = [];
-  
-  laodUsers(BuildContext context) {
+
+
+  jobFeched(BuildContext context) {
     Firebase().getJobs().then((data) {
       if (data is List<AddJobModel>) {
         log('isList');

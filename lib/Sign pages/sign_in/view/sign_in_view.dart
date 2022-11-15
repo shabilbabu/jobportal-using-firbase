@@ -89,6 +89,7 @@ class SignInView extends StatelessWidget {
                   onTap: () {
                     print('tapped......');
                     // context.read<SignInController>().toSignInFunction(context);
+                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => BottomView()));
                   },
                   child: Consumer<SignInController>(
                     builder: (context, value, child) {

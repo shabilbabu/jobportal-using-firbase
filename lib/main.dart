@@ -7,6 +7,7 @@ import 'package:job_port/add%20profile/controller/add_profile_controller.dart';
 import 'package:job_port/bottom/controller/bottom_controller.dart';
 import 'package:job_port/bottom/view/bottom_navigation.dart';
 import 'package:job_port/introduction_screens/controller/indroduction_controller.dart';
+import 'package:job_port/introduction_screens/view/introduction_screen.dart';
 import 'package:job_port/jobs/controller/jobs_controller.dart';
 import 'package:provider/provider.dart';
 
@@ -50,9 +51,9 @@ class MyApp extends StatelessWidget {
               create: (context) => JobViewProvider(),
             ),
           ],
-          child:   MaterialApp(
+          child: const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: BottomView(),
+            home: IntroductionScreen(),
           ),
         );
       },

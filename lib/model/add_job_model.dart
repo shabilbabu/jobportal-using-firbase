@@ -14,6 +14,7 @@ class AddJobModel {
   String? experience;
   String? qualification;
   String? jobType;
+  String? img;
 
   AddJobModel(
       {this.companyname,
@@ -25,21 +26,23 @@ class AddJobModel {
       this.description,
       this.experience,
       this.qualification,
-      this.jobType
+      this.jobType,
+      this.img
       });
 
-  AddJobModel.fromResponse(DocumentSnapshot<Object?> response) {
-    companyname = response.get('companyname');
-    jobposition = response.get('jobposition');
-    location = response.get('location');
-    numberofemployees = response.get('numberofemployees');
-    websitelink = response.get('websitelink');
-    recruitername = response.get('recruitername');
-    description = response.get('description');
-    experience = response.get('experience');
-    qualification = response.get('qualification');
-    jobType = response.get('jobType');
-  }
+  // AddJobModel.fromResponse(DocumentSnapshot<Object?> response) {
+  //   companyname = response.get('companyname');
+  //   jobposition = response.get('jobposition');
+  //   location = response.get('location');
+  //   numberofemployees = response.get('numberofemployees');
+  //   websitelink = response.get('websitelink');
+  //   recruitername = response.get('recruitername');
+  //   description = response.get('description');
+  //   experience = response.get('experience');
+  //   qualification = response.get('qualification');
+  //   jobType = response.get('jobType');
+  //   img = response.get('img');
+  // }
 
   Map<String, dynamic> toMap() {
     return {
@@ -53,6 +56,7 @@ class AddJobModel {
       'experience': experience,
       'qualification': qualification,
       'jobType': jobType,
+      'img': img,
     };
   }
 
@@ -67,5 +71,6 @@ class AddJobModel {
         experience: json['experience'],
         qualification: json['qualification'],
         jobType: json['jobType'],
+        img: json['img']
       );
 }

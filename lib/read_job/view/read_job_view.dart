@@ -8,25 +8,8 @@ import 'package:job_port/read_job/read%20job%20custom%20widget/read_job_custom.d
 class ReadJobView extends StatelessWidget {
   const ReadJobView({
     Key? key,
-    // required this.companyname,
-    // required this.jobposition,
-    // required this.location,
-    // required this.jobType,
-    // required this.numberofemployees,
-    // required this.websitelink,
-    // required this.recruitername,
-    // required this.description,
     required this.user
   }) : super(key: key);
-
-  // final String companyname;
-  // final String jobposition;
-  // final String location;
-  // final String jobType;
-  // final String numberofemployees;
-  // final String websitelink;
-  // final String recruitername;
-  // final String description;
   final AddJobModel user;
 
   @override
@@ -183,7 +166,7 @@ class ReadJobView extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  'We are hiring flutter developers for join in \nour teame.',
+                                  'We are hiring ${user.jobposition} for join in \nour teame.',
                                   overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.oswald(
                                     color: Colors.white,
@@ -260,20 +243,20 @@ class ReadJobView extends StatelessWidget {
                 ),
                  Description(
                     title: user.description!),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
-                const Description(
-                    title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
+                // const Description(
+                //     title: 'There are many variations of passages'),
                 SizedBox(
                   height: 30.h,
                 ),

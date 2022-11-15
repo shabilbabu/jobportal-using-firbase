@@ -16,9 +16,11 @@ class IntroPageTwo extends StatelessWidget {
               const ContainerDecoration(color: Colors.transparent),
               Padding(
                 padding: EdgeInsets.only(top: ScreenUtil().setHeight(20)),
-                child: Image.asset(
-                  'assets/2nd.png',
-                  width: ScreenUtil().setWidth(350),
+                child: Center(
+                  child: Image.asset(
+                    'assets/2nd.png',
+                    width: ScreenUtil().setWidth(350),
+                  ),
                 ),
               ),
             ],

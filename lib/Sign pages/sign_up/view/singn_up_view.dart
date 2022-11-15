@@ -6,6 +6,7 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:job_port/Sign%20pages/Hello%20title%20widget/hello_title_widget.dart';
 import 'package:job_port/Sign%20pages/sign_in/view/sign_in_view.dart';
 import 'package:job_port/Sign%20pages/sign_up/controller/sign_up_controller.dart';
+import 'package:job_port/bottom/view/bottom_navigation.dart';
 import 'package:job_port/custom%20widget/container%20button/container_button.dart';
 import 'package:job_port/custom%20widget/subtitle%20widgets/subtitle_widget.dart';
 import 'package:provider/provider.dart';
@@ -120,6 +121,7 @@ class SignUpView extends StatelessWidget {
                 onTap: () {
                   // Provider.of<SignUpController>(context, listen: false)
                   //     .toSignUpFunction(context);
+                  navigateTo(context, BottomView());
                 },
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 30.w),
